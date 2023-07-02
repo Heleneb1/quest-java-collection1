@@ -20,6 +20,9 @@ public class Thanos {
         for (Hero hero : heroes) {
             if (hero.getName().equals("Thor")) {
                 hero.setAge(1501);
+                String message = String.format("It's your birthday %s %d  %s", hero.getName(), hero.getAge(),
+                        "years old");
+                System.out.println(message);
                 break;
             }
         }
